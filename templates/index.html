@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>One In The Universe</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">  
+        <form id="contact" action="/" method="post">
+          <h3>Customer Requisition Form</h3>
+          <h4>We will reach out to you soon.</h4>
+          <fieldset>
+            <input id="name" name="name" placeholder="Your name" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input id="mail" name="mail" placeholder="Your Email Address" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input id="phone" name="phone" placeholder="Your Phone Number" type="tel" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <div>
+              <label for="bedsheets">Bedsheet and pillow cover set :</label><br>
+              <div class="col">
+                <label for="bedsheettype">Type :</label>
+                <select id="bedsheettype" name="bedsheettype">
+                  <option value="None">None</option>
+                  <option value="King Size: 108 X 108 inches">King Size (108X108in)</option>
+                  <option value="King Size: 90 X 100 inches">King Size (90X100in)</option>
+                  <option value="Queen Size: 81 X 96 inches">Queen Size (81X96in)</option>
+                  <option value="Kids/Twin Size: 60 X 90 inches">Kids/Twin (60X90in)</option>
+                </select>
+              </div>
+              <div class="col">
+                <label for="bedsheetcount"> Quantity :</label>
+                <input type="number" id="bedsheetcount" name="bedsheetcount" placeholder="0" min="0" max="10">
+              </div>
+              <div class="col">
+                <input type="file" id="myfile" name="myfile">
+              </div>
+              <div class="col">
+                <p hidden>hidden.</p>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+              <label for="curtains">Curtains :</label><br>
+              <div>
+                <div class="col">
+                <label for="curtaintype">Type :</label>
+                <select id="curtaintype" name="curtaintype">
+                  <option value="None">None</option>
+                  <option value="Curtain (Window-5ft)">Curtain (Window-5ft)</option>
+                  <option value="Curtain (Window-7ft)">Curtain (Window-7ft)</option>
+                  <option value="Curtain (Door-8ft)">Curtain (Door-8ft)</option>
+                  <option value="Curtain (Door-9ft)">Curtain (Door-9ft)</option>
+                </select>
+                </div>
+              <div class="col">
+                <label for="curtaincount"> Quantity :</label>
+                <input type="number" id="curtaincount" name="curtaincount" placeholder="0" min="0" max="10">
+              </div>
+              <div class="col">
+                <input type="file" id="myfile" name="myfile">
+              </div>
+              <div class="col">
+                <p hidden>hidden.</p>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <label for="sarees">Sarees: (<i>Saree 6.5 meters with blouse</i>)</label><br>
+            <div>
+            <div class="col">
+              <label for="occasion">Occasion:</label>
+              <input type="text" id="occasion" name="occasion">
+            </div>
+            <div class="col">
+              <label for="sareeforwhom">For whom:</label>
+              <input type="text" id="sareeforwhom" name="sareeforwhom">
+            </div>
+            <div class="col">
+              <label for="sareecount"> Quantity :</label>
+              <input type="number" id="sareecount" name="sareecount" placeholder="0" min="0" max="10">
+            </div>
+            <div class="col">
+              <input type="file" id="myfile" name="myfile">
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <label for="shirt">Shirts: (<i>Minimum quantity is 3</i>)</label><br>
+          <div>
+          <div class="col">
+            <label for="shirtforwhom">For whom:</label>
+            <input type="text" id="shirtforwhom" name="shirtforwhom">
+          </div>
+          <div class="col">
+            <label for="shirtcount"> Quantity :</label>
+            <input type="number" id="shirtcount" name="shirtcount" placeholder="3" min="3" max="20">
+          </div>
+          <div class="col">
+          <label for="shirtsize">Size :</label>
+          <select id="shirtsize" name="shirtsize">
+            <option value="shirt38">38"</option>
+            <option value="shirt40">40"</option>
+            <option value="shirt42">42"</option>
+            <option value="shirt44">44"</option>
+          </select>
+          </div>          
+          <div class="col">
+            <input type="file" id="myfile" name="myfile">
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <label for="kaftan">Kaftans: (<i>Minimum quantity is 3</i>)</label>
+        <a href="/sizechart">Size Chart</a>
+        <br>
+        <div>
+        <div class="col">
+          <label for="kaftanforwhom">For whom:</label>
+          <input type="text" id="kaftanforwhom" name="kaftanforwhom">
+        </div>
+        <div class="col">
+          <label for="kaftancount"> Quantity :</label>
+          <input type="number" id="kaftancount" name="kaftancount" placeholder="3" min="3" max="20">
+        </div>
+        <div class="col">
+        <label for="kaftansize">Size :</label>
+        <select id="kaftansize" name="kaftansize">
+          <option value="kaftanXS">XS</option>
+          <option value="kaftanS">S</option>
+          <option value="kaftanM">M</option>
+          <option value="kaftanL">L</option>
+          <option value="kaftanXL">XL</option>
+        </select>
+        </div>          
+        <div class="col">
+          <input type="file" id="myfile" name="myfile">
+        </div>
+      </div>
+    </fieldset>
+          <fieldset>
+            <label for="address">Delivery Address :</label><br>
+            <textarea id="address" name="address" placeholder="Please provide your delivery address here..." tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <label for="message">Your suggestions :</label><br>
+            <textarea id="message" name="message" placeholder="Type your message here..." tabindex="5"></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+</body>
+</html>
